@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-title: "Cinzel", Georgia, serif;
+  --font-ui: "Rajdhani", system-ui, sans-serif;
+  --color-gold: #e2c176;
+  --color-gold-bright: #f5df9e;
+  --color-ink: #07090d;
+  --color-vermilion: #c9343f;
+  --color-mana: #4d60d4;
+  --color-teal: #3be0c8;
+  --color-syn: #4fc3ff;
+  --color-synack: #ffd24a;
+  --color-ack: #58ff9b;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: #030608;
+  overflow: hidden;
+  color: #dce7e4;
+  font-family: "Rajdhani", system-ui, sans-serif;
+  user-select: none;
+}
+
+canvas {
+  display: block;
+  outline: none;
+}
+
+/* Scrollbar estilizada y sobria */
+.scroll-thin::-webkit-scrollbar {
+  width: 6px;
+}
+.scroll-thin::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.4);
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: rgba(226, 193, 118, 0.25);
+  border-radius: 4px;
+}
+.scroll-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(226, 193, 118, 0.45);
+}
+
+input[type="range"] {
+  accent-color: #e2c176;
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
